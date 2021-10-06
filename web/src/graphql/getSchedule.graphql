@@ -1,0 +1,25 @@
+query GetSchedule($page: Float, $perPage: Float) {
+  getSchedule(page: $page, perPage: $perPage) {
+    total
+    appointments {
+      id
+      userId
+      rRule
+      startDate
+      endDate
+      exDate
+      type
+      workPatternId
+      patternDetailId
+    }
+    resources {
+      title
+      fieldName
+      instances {
+        id
+        text
+        color
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+mutation AddTeam($users: [UserInputType!], $name: String!) {
+  addTeam(name: $name, users: $users){
+      success,
+      team{
+          name
+      }
+  }
+}

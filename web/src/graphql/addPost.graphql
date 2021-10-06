@@ -1,0 +1,3 @@
+mutation AddPost($content: String!, $sendEmail: Boolean) {
+  addPost(content: $content, sendEmail: $sendEmail)
+}

@@ -1,0 +1,27 @@
+query AllUsers($page: Float) {
+  allUsers(page: $page) {
+    total
+    users {
+      id
+      email
+      firstName
+      lastName
+      startDate
+      teams {
+        name
+      }
+      workPatterns {
+        startDate
+        endDate
+        repeatsOn
+        patternDetails {
+          type
+          startDate
+          endDate
+          rRule
+        }
+      }
+      isAdmin
+    }
+  }
+}

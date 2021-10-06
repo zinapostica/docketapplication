@@ -1,0 +1,21 @@
+mutation EditUser(
+  $userId: Float!
+  $email: String!
+  $firstName: String!
+  $lastName: String!
+  $isAdmin: Boolean!
+  $startDate: DateTime!
+  $teams: [TeamInputType!]
+  $workPatterns: [WorkPatternsInputType!]!
+) {
+  editUser(
+    email: $email
+    firstName: $firstName
+    lastName: $lastName
+    isAdmin: $isAdmin
+    startDate: $startDate
+    workPatterns: $workPatterns
+    teams: $teams
+    userId: $userId
+  )
+}

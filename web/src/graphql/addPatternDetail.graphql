@@ -1,0 +1,17 @@
+mutation AddPatternDetail(
+  $exDate: String
+  $rRule: String
+  $workPatternId: Float!
+  $endDate: String!
+  $startDate: String!
+  $type: Float
+) {
+  addPatternDetail(
+    workPatternId: $workPatternId
+    startDate: $startDate
+    endDate: $endDate
+    rRule: $rRule
+    exDate: $exDate
+    type: $type
+  )
+}

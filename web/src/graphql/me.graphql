@@ -1,0 +1,11 @@
+query Me {
+  me {
+    id
+    email
+    isAdmin
+    company{
+      id
+      name
+    }
+  }
+}

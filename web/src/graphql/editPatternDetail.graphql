@@ -1,0 +1,17 @@
+mutation EditPatternDetail(
+  $exDate: String
+  $rRule: String
+  $patternDetailId: Float!
+  $endDate: String!
+  $startDate: String!
+  $type: Float
+) {
+  editPatternDetail(
+    patternDetailId: $patternDetailId
+    startDate: $startDate
+    endDate: $endDate
+    rRule: $rRule
+    exDate: $exDate
+    type: $type
+  )
+}

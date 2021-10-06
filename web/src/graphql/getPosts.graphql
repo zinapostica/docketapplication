@@ -1,0 +1,15 @@
+query GetPosts($page: Float, $perPage: Float) {
+  getPosts(page: $page, perPage:$perPage) {
+    total
+    posts{
+        id
+        content
+        date
+        user{
+            id
+            firstName
+            lastName
+        }
+    }
+  }
+}

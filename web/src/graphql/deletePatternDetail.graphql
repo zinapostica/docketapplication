@@ -1,0 +1,3 @@
+mutation DeletePatternDetail($patternDetailId: Float!) {
+  deletePatternDetail(patternDetailId: $patternDetailId)
+}

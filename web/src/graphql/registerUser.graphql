@@ -1,0 +1,19 @@
+mutation RegisterUser(
+  $email: String!
+  $firstName: String!
+  $lastName: String!
+  $isAdmin: Boolean!
+  $startDate: DateTime!
+  $teams: [TeamInputType!]
+  $workPatterns: [WorkPatternsInputType!]!
+) {
+  registerUser(
+    email: $email
+    firstName: $firstName
+    lastName: $lastName
+    isAdmin: $isAdmin
+    startDate: $startDate
+    workPatterns: $workPatterns
+    teams: $teams
+  )
+}
